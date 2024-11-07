@@ -1,0 +1,37 @@
+body {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+.subt h1 {
+    color: rgb(32, 44, 40);
+    text-align: center;
+}
+
+.subt h2{
+    text-align: right;
+}
+
+.Img {
+    object-fit: calc(2s);
+    transition: transform 1s ease
+}
+
+.Img:hover {
+transform: scale(1.05);
+}
+
+.textMusica{
+  text-align: end;
+  color: grey;
+  
+}
+
+.textMusica p a{
+    color: grey;
+    text-decoration: none;
+}
+.link{
+    text-align: end;
+}
