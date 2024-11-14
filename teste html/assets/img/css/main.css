@@ -1,0 +1,157 @@
+body {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: antiquewhite;
+      overflow-x: hidden;
+}
+
+.subt h1 {
+    color: rgb(32, 44, 40);
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.subt h2 {
+    text-align: right;
+}
+
+#Img {
+    object-fit: calc(2s);
+    transition: transform 1.5s ease
+}
+
+.eba{
+ text-align: center;
+}
+
+#Img:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    text-align: justify;
+}
+
+.historia p{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+#img {
+    object-fit: calc(2s);
+    transition: transform 1.5s ease
+}
+
+#img:hover {
+    transform: scale(1.05);
+}
+
+.oba {
+    text-align: center;
+}
+
+.textMusica {
+    text-align: end;
+}
+
+.txtMusica {
+    text-align: end;
+    color: rgb(0, 0, 0);
+}
+
+.txtMusica a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.txtMusica a:hover {
+    color: rgb(214, 85, 85);
+    transition: 0.7s;
+}
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+  
+  .slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+  }
+  
+  .slider-content input, .img-mobile{
+    display: none;
+  }
+  
+  .slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+  }
+  
+  .slide-box img{
+    width: 100%;
+  }
+  
+  .nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 760px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid  rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+  }
+  
+  .nav-manual .manual-btn:hover{
+    background-color: #ffffff;
+  }
+  
+  #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background: rgb(255, 255, 255);
+  }
+  
+  #radio1:checked ~ .primeiro{
+    margin-left: 0%;
+  }
+  
+  #radio2:checked ~ .primeiro{
+    margin-left: -25%;
+  }
+  
+  #radio3:checked ~ .primeiro{
+    margin-left: -50%;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+  
+    .img-mobile{
+        display: block;
+    }
+  
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+  }
