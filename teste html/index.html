@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>27 / 01</title>
     <link rel="icon" href="assets/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 
 </head>
@@ -18,6 +20,7 @@
 
     </div>
     <!-- link de páginas-->
+     <div class="oculos">
     <a href="indexJantares.html">
         <img id="img" src="assets/img/img.jantares.png" width="300px" height="200px" class="img" /></a>
     <a href="indexViagens.html"> <img id="img" src="assets/img/img.viagem.png" width="300px" height="200px"
@@ -28,6 +31,7 @@
             class="img" /></a>
     <a href="indexMomentos.html"> <img id="img" src="assets/img/img.melhores.momentos.png" width="300px" height="200px"
             class="img" /></a>
+        </div>
 
 
     <!-- parágrafo -->
@@ -72,7 +76,7 @@
               <img src="assets/img/imagem1.jpg.webp" alt="slide 1" width="300" height="800">
           </div>
       
-          <div class="slide-box">
+          <div class="slide-box" id="">
               <img src="assets/img/imagem3.jpg.webp" alt="slide 2" width="300" height="800">
           </div>
       
@@ -95,6 +99,41 @@
             <a href="https://www.youtube.com/watch?v=boPw4_DguGI"> <br>Oriente - Pras Damas</a>
         </p>
     </div>
+
+    <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+      <script>
+        const ctx = document.getElementById('myChart');
+        
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'oaoa'],
+            datasets: [{
+              label: '# of Votes',
+              data: [12, 2, 3, 5, 2, 3, 4],
+              backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#F0E68C', '#8A2BE2', '#FF8C00', '#D2691E'],  // Cores de preenchimento
+              borderColor: ['#C70039', '#C70039', '#C70039', '#C70039', '#C70039', '#C70039', '#C70039'],  // Cor da borda
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+      
+      
+
+
     <link rel="stylesheet" href="assets/img/css/main.css">
     <script src="assets/img/script/main.js"></script>
 <script src="assets/img/script/main2.js"></script>

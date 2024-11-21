@@ -13,7 +13,7 @@ function proximaImg() {
 }
 
 // Carrossel automático
-let autoSlideInterval = setInterval(proximaImg, 3000);
+let autoSlideInterval = setInterval(proximaImg, 6000);
 
 // Selecionar o conteúdo do carrossel
 const sliderContent = document.getElementById('sliderContent');
@@ -25,9 +25,10 @@ function stopAutoSlide() {
 
 // Função para reiniciar o carrossel
 function startAutoSlide() {
-  autoSlideInterval = setInterval(proximaImg, 3000);
+  autoSlideInterval = setInterval(proximaImg, 5000);
 }
 
 // Eventos para pausar e reiniciar o carrossel ao passar o mouse
 sliderContent.addEventListener('mouseenter', stopAutoSlide);
 sliderContent.addEventListener('mouseleave', startAutoSlide);
+
