@@ -107,29 +107,34 @@
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       
       <script>
+     <script>
         const ctx = document.getElementById('myChart');
-        
+
         new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'oaoa'],
-            datasets: [{
-              label: '# of Votes',
-              data: [12, 2, 3, 5, 2, 3, 4],
-              backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#F0E68C', '#8A2BE2', '#FF8C00', '#D2691E'],  // Cores de preenchimento
-              borderColor: ['#C70039', '#C70039', '#C70039', '#C70039', '#C70039', '#C70039', '#C70039'],  // Cor da borda
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
+            type: 'bar',
+            data: {
+                labels: ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabado', 'Domingo'],
+                datasets: [{
+                    label: 'Horas por dia que penso em você',
+                    data: [16, 18, 15, 16, 12, 20,24],
+                    backgroundColor: [' rgb(214, 85, 85)', ' rgb(214, 85, 85)', ' rgb(214, 85, 85)', ' rgb(214, 85, 85)', ' rgb(214, 85, 85)', ' rgb(214, 85, 85)', ' rgb(214, 85, 85)',],  // Cores de preenchimento
+                    borderWidth: 0.7,
+                    borderRadius: 7
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        max: 20
+                    },
+                    y: {
+                        max: 24
+                    }
+                }
             }
-          }
+
         });
-      </script>
+    </script>
       
       
 
