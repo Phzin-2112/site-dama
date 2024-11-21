@@ -48,6 +48,9 @@ body {
 #img:hover {
     transform: scale(1.05);
 }
+.img{
+  margin-top: -70px;
+}
 
 .oba {
     text-align: center;
